@@ -11,8 +11,8 @@ namespace Japax_Courier_DB.Clients
     
     public class GClient
     {
-        public string GOOGLE_MAPS_API_KEY = "AIzaSyB9aiE-enfBpVjFI5vpOllWfr0EojNYOio";
-        public string FCM_Server_Key = "AAAAr_dqFqc:APA91bG5D9DtgJuFVszT0n5aNQtK74NJCjF9gG4Vm3qoZTRsU38aLuxADRFX0WzDo0dwMY1u2tZ6TTtDyuEfbV6jP9nGVg55VAxz8mwc4MvuczujPlWkSsZho3vya08-EWpg5qvqpQxW";
+        public string GOOGLE_MAPS_API_KEY = "YOUR_MAPS_API_KEY";
+        public string FCM_Server_Key = "YOUR FCM SERVER KEY";
         public async Task<bool> isWithinPolygon(List<CoordinatePoint> poly, float pointX, float pointY)
         {
             GoogleClient _GoogleClient = new GoogleClient(GOOGLE_MAPS_API_KEY);
